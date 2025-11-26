@@ -1,1 +1,0 @@
-detailproduk/readme.md
