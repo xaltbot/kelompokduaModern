@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Detail Produk</title>
+    <link rel="stylesheet" href="detailproduk.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../img/premium.jpg" alt="Surat Undangan Standar">
+            </div>
+            
+            <div class="product-details">
+                <h1>Surat Undangan Premium</h1>
+                
+                <div class="features">
+                    <div class="feature">Basic features</div>
+                    <div class="feature">Desain Eksklusif & Custom</div>
+                    <div class="feature">Musik Latar dan Video Unggahan</div>
+                    <div class="feature">Support 24/7 dan Personal Assistant</div>
+                   <div class="feature">Galeri Foto & Video Tak Terbatas</div>
+                </div>
+                
+                <div class="price">Rp 149.000</div>
+                
+                <div class="actions">
+                    <button class="btn-view">Lihat Detail</button>
+                    <button class="btn-cart">Tambah ke Keranjang</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+// Fungsi untuk menampilkan alert ketika tombol diklik
+function showAlert(message) {
+    alert(message);
+}
+
+// Tunggu hingga halaman selesai dimuat
+document.addEventListener('DOMContentLoaded', function() {
+    // Tambahkan event listener untuk tombol "Lihat Detail"
+    const viewButton = document.querySelector('.btn-view');
+    if (viewButton) {
+        viewButton.addEventListener('click', function() {
+            showAlert('Anda akan melihat detail produk');
+        });
+    }
+    
+    // Tambahkan event listener untuk tombol "Tambah ke Keranjang"
+    const cartButton = document.querySelector('.btn-cart');
+    if (cartButton) {
+        cartButton.addEventListener('click', function() {
+            showAlert('Telah ditambahkan ke keranjang');
+        });
+    }
+});
+</script>
+</body>
+</html>

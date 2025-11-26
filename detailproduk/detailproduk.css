@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #C4BCB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Card Styling */
+.product-card {
+    background-color: #FEFEFE;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(2, 8, 5, 0.1);
+}
+
+/* Image Section */
+.product-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEFEFE;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Details Section */
+.product-details {
+    padding: 25px;
+}
+
+.product-details h1 {
+    color: #020805;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.features {
+    margin-bottom: 20px;
+}
+
+.feature {
+    color: #020805;
+    padding: 8px 0;
+    border-bottom: 1px solid #C4BCB0;
+}
+
+.feature:last-child {
+    border-bottom: none;
+}
+
+.price {
+    color: #020805;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-view, .btn-cart {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-view {
+    background-color: #8F9275;
+    color: #FEFEFE;
+}
+
+.btn-cart {
+    background-color: transparent;
+    color: #8F9275;
+    border: 2px solid #8F9275;
+}
+
+.btn-view:hover {
+    background-color: #7a7d63;
+}
+
+.btn-cart:hover {
+    background-color: #8F9275;
+    color: #FEFEFE;
+}
+
+/* Desktop Layout */
+@media (min-width: 1024px) {
+    .product-card {
+        display: flex;
+        height: 500px;
+    }
+    
+    .product-image {
+        width: 45%;
+        height: 100%;
+    }
+    
+    .product-image img {
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .product-details {
+        width: 55%;
+        padding: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .product-details h1 {
+        font-size: 28px;
+    }
+    
+    .price {
+        font-size: 26px;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 1023px) {
+    .product-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .product-image {
+        height: 300px;
+    }
+    
+    .product-image img {
+        height: 100%;
+        object-fit: contain;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+}
